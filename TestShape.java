@@ -1,15 +1,22 @@
-package Ob.op.pr;
+package com.rays.absct;
 
 public class TestShape {
 	public static void main(String[] args) {
-		Shape a = new Shape();
-		a.setBorderWidth(9);
-		a.setColor("green");
-		System.out.println(a.getBorderWidth() + "hii" + a.getColor());
-
-		Shape a2 = new Shape();
-	      a2.setBorderWidth(5);
-	      a2.setColor("red");
-	      System.out.println(a2.getBorderWidth() + "hello" +  a2.getColor());
-	}
+		Shape s=new Ractangle();
+	
+    
+    Ractangle r=(Ractangle)s;
+    r.setLength(10);
+    r.setWidth(20);
+    System.out.println(r.area());
+    
+    Circle c=new Circle();
+    c.setRadius(5);
+    System.out.println(c.area());
+    
+    Triangle t=new Triangle();
+    t.setBase(20);
+    t.setHight(20);
+    System.out.println(t.area());
+    }   
 }
